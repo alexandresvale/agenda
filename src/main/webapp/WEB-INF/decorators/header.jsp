@@ -9,7 +9,7 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="/"><i class="fa fa-address-book-o"
+			<a class="navbar-brand" href="#"><i class="fa fa-address-book-o"
 				aria-hidden="true"></i> &nbspAgenda Pessoal Web</a>
 		</div>
 
@@ -18,9 +18,6 @@
 				<!-- <li class="active"><a href="/">Início <span class="sr-only">(current)</span></a></li> -->
 				<!-- <li><a href="/about/team">Sobre</a></li> -->
 				<li><a href="/">Início</a></li>
-				<li><a href="/new">Adicionar Contato</a></li>
-				<li><a href="/advanced-search">Pesquisa Avançada</a></li>
-
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<!-- <li><a href="/about">Sobre</a></li> -->
@@ -32,6 +29,6 @@
 		</div>
 	</div>
 </nav>
-<div id="site">
+<div id="site" class="container">
 	<sitemesh:write property="body" />
 </div>

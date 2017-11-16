@@ -13,7 +13,7 @@
 				<label for="nome" class="col-lg-2 control-label">Nome</label>
 				<div class="col-lg-10">
 					<input class="form-control" id="nome" name="nome"
-						placeholder="Título" type="text" value="${contato.nome }">
+						placeholder="Nome" type="text" value="${contato.nome }">
 				</div>
 			</div>
 			<div class="form-group">
@@ -95,11 +95,11 @@
     </div> -->
 			<div class="form-group">
 				<div class="col-lg-10 col-lg-offset-2">
-					<a  class="btn btn-primary"
-						href="javascript:history.back()">Voltar&ensp;<span
+					<a  class="btn btn-default"
+						href="/">Voltar&ensp;<span
 						class="fa fa-undo"></span></a>
-					<button type="reset" class="btn btn-primary">Reset</button>
-					<button type="submit" class="btn btn-primary">
+					<button type="reset" class="btn btn-default">Reset</button>
+					<button type="submit" class="btn btn-default">
 						Search&ensp;<span class="fa fa-search"></span>
 					</button>
 				</div>

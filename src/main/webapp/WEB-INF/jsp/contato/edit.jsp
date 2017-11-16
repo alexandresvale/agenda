@@ -28,7 +28,7 @@
 			<div class="form-group">
 				<label for="email" class="col-lg-2 control-label">Telefone</label>
 				<div class="col-lg-10">
-					<input class="form-control" id="telefone" name="telefone" required
+					<input class="form-control telefone" id="telefone" name="telefone" required
 						placeholder="Telefone" type="text" value="${contato.telefone }">
 				</div>
 			</div>
@@ -98,9 +98,14 @@
 			<div class="form-group">
 				<div class="col-lg-10 col-lg-offset-2">
 					<button type="reset" class="btn btn-default">Reset</button>
-					<button type="submit" class="btn btn-primary">Submit</button>
+					<button type="submit" class="btn btn-default">Submit</button>
 				</div>
 			</div>
 		</fieldset>
 	</form>
 </div>
+<script>
+		jQuery(function($) {
+			$(".telefone").mask("99999999999");
+		});
+</script>

@@ -51,6 +51,18 @@ public class PageController {
 	@GetMapping(value = { "", "list" })
 	public String listContato(ModelMap model) {
 		List<Contato> contatos = service.getAll();
+		Contato contato = getEntity();
+		model.addAttribute("contato", contato);
+		model.addAttribute("contatos", contatos);
+		this.LOGGER.debug(String.format("Requesting all the records[%s].", contatos.toString()));
+		return getPath("list");
+	}
+	
+	@PostMapping(value = { "", "list" })
+	public String listContatoResult(@ModelAttribute("contato")  Contato contato, BindingResult result,
+			HttpServletRequest request, ModelMap model) {
+		List<Contato> contatos = service.getByNomeEmailTelefoneEndereco(contato);
+		model.addAttribute("contato", contato);
 		model.addAttribute("contatos", contatos);
 		this.LOGGER.debug(String.format("Requesting all the records[%s].", contatos.toString()));
 		return getPath("list");
