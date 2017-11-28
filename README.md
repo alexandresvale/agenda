@@ -12,6 +12,7 @@ Quick start
 1. Setup database username and password in `application.properties` file.
 2. `
 create database agenda;
+use agenda;
 create table contato(
 	id INTEGER NOT NULL AUTO_INCREMENT,
     nome VARCHAR(60) NOT NULL,
