@@ -38,7 +38,7 @@
 			<a class="btn btn-default"
 				href="${pageContext.request.contextPath }/update/${contato.id}">Update</a>
 			<a class="btn btn-default" href="#"
-							data-href="delete/${contato.id}" data-toggle="modal"
+							data-href="/delete/${contato.id}" data-toggle="modal"
 							data-target="#confirm-delete" data-toggle2="tooltip"
 							data-placement="bottom" title="remover">Delete</a>
 		</div>
